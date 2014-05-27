@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        =  'citesight'
   s.version     =  '0.0.1'
-  s.executables << 'citations'
+  s.executables << 'citesight'
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'minitest-rg'
   s.add_runtime_dependency 'pp'
