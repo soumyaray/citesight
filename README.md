@@ -1,5 +1,7 @@
 #citesight
-Gem to xtract and report on citations in an academic text
+Gem to extract and report on citations in an academic text
+[![Gem Version](https://badge.fury.io/rb/citesight.svg)](http://badge.fury.io/rb/citesight)
+
 home: [https://github.com/soumyaray/citesight](https://github.com/soumyaray/citesight)
 
 ## Usage
