@@ -4,7 +4,6 @@ Gem::Specification.new do |s|
   s.executables << 'citesight'
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'minitest-rg'
-  s.add_runtime_dependency 'pp'
   s.date        =  '2014-05-27'
   s.summary     =  'Citation extractor and analyzer'
   s.description =  'Extract and analyze citations from APA style paper'
