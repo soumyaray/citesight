@@ -6,7 +6,7 @@ home: [https://github.com/soumyaray/citesight](https://github.com/soumyaray/cite
 This gem may be used as a command line utility or called from code
 
 ### CLI:
-    citations mydoc.txt
+    citesight mydoc.txt
 
 ### Code example:
     require 'citesight'
