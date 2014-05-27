@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.description =  'Extract and analyze citations from APA style paper'
   s.authors     =  ['Soumya Ray']
   s.email       =  'soumya.ray@gmail.com'
-  s.files       =  ["lib/citations.rb"]
+  s.files       =  ["lib/citesight.rb"]
   s.homepage    =  'https://github.com/soumyaray/citesight'
   s.license     =  'MIT'
 end
