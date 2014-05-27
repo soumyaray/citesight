@@ -1,18 +1,18 @@
 #!/usr/bin/env ruby
 
-require '../lib/citations'
+require 'citesight'
 require 'pp'
 
 # executable requirements: (1) env shebang above; (2) file mode 0755
 
-raise ArgumentError, "Usage:  get_citations [filename]\n" if ARGV.count ==0
+fail ArgumentError, "Usage:  get_citations [filename]\n" if ARGV.count == 0
 
-contents = File.open(ARGV[0], "r").read
+contents = File.open(ARGV[0], 'r').read
 
-results = PaperCitations.unique_cites(contents).sort_by { |c, cnt| c.downcase }
+results = PaperCitations.unique_cites(contents).sort_by { |c, _| c.downcase }
 
 puts "Top citations:\n"
-PP.pp(Hash[results.sort_by {|cite, count| count}.reverse.take(5)])
+PP.pp(Hash[results.sort_by { |_cite, count| count }.reverse.take(5)])
 
 puts "\nTotal unique citations: #{results.count}"
 PP.pp(Hash[results])
