@@ -27,14 +27,14 @@ class PaperCitations
   end
 
   def name
-    "(#{prefix}?[A-Z][[:alpha:]\'\’\-]+)"      # name: caps, accents, 's
+    "(#{prefix}?[A-Z][[:alpha:]\'\u2019\-]+)"      # name: caps, accents, 's
   end
 
   def cite_match
     /(
       #{name}{1}                                    # first author
       ([ ]and[ ]#{name} | ([ ]et[ ]al.){1})?        # remaining authors
-      ([\'\’]s|s[\'\’])?                            # possessive form
+      ([\'\u2019]s|s[\'\u2019])?                            # possessive form
       ([ ][\(]?[1-2][0-9]{3}[a-z]?[,\)\;])          # year
     )/x
   end
