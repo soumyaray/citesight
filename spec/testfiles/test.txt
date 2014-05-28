@@ -1,6 +1,6 @@
 TEST CASES:
-from Charlton’s (2002) global Griffiths’ (2000) and Peters et al.’s (2007) major core
-Ma and Agarwal (2007) from Hur (2007) and even Oreg's (1995b) paper citing Ray's (2000) work
+special \u2019 quotes on these: from Charlton’s (2002) global Griffiths’ (2000) and Peters et al.’s (2007) major core
+ordinary quotes on these: Ma and Agarwal (2007) from Hur (2007) and even Oreg's (1995b) paper citing Ray's (2000) work
 Ma et al. (2002) et al. and (Hur 2007, Peters et al.’s 2007, Griffins' 2000) from
 the paper (O'Hern 2010) and from McDonald (2003) and Wa'el et al. (1993) or
 even from van der Aalst (2004) or others (De Boor 1980).

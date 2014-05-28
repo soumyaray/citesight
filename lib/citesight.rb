@@ -13,7 +13,7 @@ class PaperCitations
   def unique_cites
     # clean citations of slashes, commas, semi-colons, possesives
     clean_cites = @contents.scan(cite_match).map do |c|
-      c[0].gsub(/[\(\),;]|([\'\’]s)/, '').gsub(/[\'\’]\s/, ' ')
+      c[0].gsub(/[\(\),;]|([\'\u2019]s)/, '').gsub(/[\'\u2019]\s/, ' ')
     end
 
     # create hash of citations (key) with counts (value)
