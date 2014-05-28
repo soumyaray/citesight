@@ -8,7 +8,7 @@ describe 'Paper', 'A text document' do
 
     before do
       contents = File.open('./spec/testfiles/test.txt', 'r').read
-      @results = PaperCitations.unique_cites(contents).sort_by { |c, _| c.downcase }
+      @results = PaperCitations.unique_cites(contents)
     end
 
     it 'has found the right citations' do
