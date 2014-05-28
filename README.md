@@ -1,7 +1,7 @@
 #citesight
 Gem to extract and report on citations in an academic text
 [![Gem Version](https://badge.fury.io/rb/citesight.svg)](http://badge.fury.io/rb/citesight)
-[![Build Status](https://travis-ci.org/soumyaray/gentle-scholar.svg)](https://travis-ci.org/soumyaray/citesight)
+[![Build Status](https://travis-ci.org/soumyaray/citesight.svg?branch=master)](https://travis-ci.org/soumyaray/citesight)
 
 home: [https://github.com/soumyaray/citesight](https://github.com/soumyaray/citesight)
 
