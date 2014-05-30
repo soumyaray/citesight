@@ -15,21 +15,18 @@ class PaperCitations
   end
 
   def unique_cites
-    # clean citations of slashes, commas, semi-colons, possesives
     clean_cites = @contents.scan(cite_match).map do |c|
       c[0].gsub(/[\(\),;]|([\'\u2019]s)/, '').gsub(/[\'\u2019]\s/, ' ')
     end
 
-    # create hash of citations (key) with counts (value)
-    Hash[clean_cites.group_by { |c| c }.map { |k, v| [k, v.count] }]
+    Hash[clean_cites.group_by { |c| c }.map { |cit, num| [cit, num.count] }]
   end
 
   def index_cite(cite)
     cite_parts = cite.split
     author_s = cite_parts.take(cite_parts.size-1)
     year_s = cite_parts.last
-    @contents.enum_for(:scan,
-                       /#{author_s}#{year(year_s)}/
+    @contents.enum_for(:scan, /#{author_s}#{possessive}?#{year(year_s)}/x
                       ).map { Regexp.last_match.begin(0) }
   end
 
@@ -43,11 +40,6 @@ class PaperCitations
   def year(literal) "([ ][\(]?#{literal}[,\)\;])" end
 
   def cite_match
-    /(
-      #{author}{1}
-      #{other_authors}?
-      #{possessive}?
-      #{year(year_literal)}
-    )/x
+    /( #{author}{1}#{other_authors}?#{possessive}?#{year(year_literal)} )/x
   end
 end

@@ -3,10 +3,10 @@ special \u2019 quotes: from Charlton’s (2002) global measure
 trailing apostrophe: in Griffiths’ (2000) and others
 Single author: from Hur (2007) and
 Two authors: Ma and Agarwal (2007)
-More than two authors: Peters et al.’s (2007) major work
-Posssive first author: even Oreg's (1995b) paper citing Ray's (2000) work
-Short name: Ma et al. (2002).
-Fragment1: Ma et al. (2002) et al.
+More than two authors: Peters et al.’s (2007) major work similar to others (Ma et al. 2002)
+Possessive first author: even Oreg's (1995b) paper citing Ray's (2000) work
+Short names: Ma et al.'s (2002)
+Fragment1: Ma et al. (2002) et al. (Ray 2000) both published before 2005.
 Multiple cites: in (Hur 2007, Peters et al.’s 2007, Griffins' 2000) from
 Apostrophes in names: (O'Hern 2010) and Wa'el et al. (1993) or
 Capitals within names: from McDonald (2003) we gather that

@@ -6,8 +6,7 @@ describe 'Paper', 'A text document' do
 
   describe 'when the paper exists' do
     before do
-      contents = File.open('./spec/testfiles/test.txt', 'r').read
-      @results = PaperCitations.unique_cites(contents)
+      @results = PaperCitations.unique_cites(TEST_CONTENTS)
     end
 
     it 'has found the right citations' do
