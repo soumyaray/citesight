@@ -1,3 +1,4 @@
+require 'json'
 require './lib/citesight.rb'
 
 TEST_TXT_RESULTS =
@@ -17,3 +18,7 @@ TEST_TXT_RESULTS =
     "van der Aalst 2004"=>1,
     "De Boor 1980"=>1
   }
+
+TEST_CASES = File.open('./spec/testfiles/test_cases.json', 'r') do |f|
+  JSON.load(f)
+end

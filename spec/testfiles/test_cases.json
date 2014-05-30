@@ -1,53 +1,54 @@
 {
-  "special \u2019 quotes": {
+  "special_u2019_quotes": {
     "case": "from Charlton’s (2002) global measure",
-    "result": ["Charlton 2002"]
+    "result": [["Charlton 2002", 1]]
   },
-  "trailing apostrophe": {
+  "trailing_apostrophe": {
     "case": "in Griffiths’ (2000) and others",
-    "result": ["Griffith 2000"]
+    "result": [["Griffith 2000", 1]]
   },
-  "single author": {
+  "single_author": {
     "case": "from Hur (2007) and",
-    "result": ["Hur 2007"]
+    "result": [["Hur 2007", 1]]
   },
-  "two authors": {
+  "two_authors": {
     "case": "Ma and Agarwal (2007)",
-    "result": ["Ma and Agarwal 2007"]
+    "result": [["Ma and Agarwal 2007", 1]]
   },
-  "more than two authors": {
+  "more_than_two_authors": {
     "case": "Peters et al.’s (2007) major work",
-    "result": "Peters et al. 2007"
+    "result": [["Peters et al. 2007", 1]]
   },
-  "possesive first author": {
+  "possesive_first_author": {
     "case": "even Hur's (2007) paper citing Ray's (2000) work",
-    "result": ["Oreg 1995b", "Ray 2000"]
+    "result": [["Hur 2007", 1], ["Ray 2000", 1]]
   },
-  "character in year": {
+  "character_in_year": {
     "case": "Oreg's (1995b) paper and Venkatesh (2003a)",
-    "result": ["Oreg 1995b", "Venkatesh 2003a"]
+    "result": [["Oreg 1995b", 1], ["Venkatesh 2003a", 1]]
   },
-  "short last name": {
+  "short_last_name": {
     "case": "from Ma et al. (2002) we find that",
-    "result": ["Ma et al. 2002"]
+    "result": [["Ma et al. 2002", 1]]
   },
   "fragment1": {
     "case": "Ma et al. (2002) et al. (2000)",
-    "result": ["Ma et al. 2002"]
+    "result": [["Ma et al. 2002", 1]]
   },
-  "multiple cites": {
+  "multiple_cites": {
     "case": "in (Hur 2007, Peters et al.’s 2007, Griffins' 2000) from",
-    "result": ["Hur 2007", "Peter et al. 2007", "Griffin 2000"]
+    "result": [["Hur 2007", 1], ["Peter et al. 2007", 1], ["Griffin 2000", 1]]
   },
-  "apostrophes in name": {
+  "apostrophes_in_name": {
     "case": "We've seen (O'Hern 2010) and Wa'el et al. (1993) say",
-    "result": ["O'Hern 2010", "Wa'el et al. 1993"]
+    "result": [["O'Hern 2010", 1], ["Wa'el et al. 1993", 1]]
   },
-  "capital letters within names": {
+  "capital_letters_within_names": {
     "case": "from McDonald (2003) we gather that",
-    "result": ["McDonald 2003"]
+    "result": [["McDonald 2003", 1]]
   },
-  "multiword last names": {
+  "multiword_last_names": {
     "case":   "even from van der Aalst (2004) or others (De Boor 1980) claim",
-    "result": ["van der Aalst 2004", "De Boor 1980"]
+    "result": [["van der Aalst 2004", 1], ["De Boor 1980", 1]]
+  }
 }
