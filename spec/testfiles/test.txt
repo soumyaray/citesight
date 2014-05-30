@@ -1,6 +1,13 @@
 TEST CASES:
-special \u2019 quotes on these: from Charlton’s (2002) global Griffiths’ (2000) and Peters et al.’s (2007) major core
-ordinary quotes on these: Ma and Agarwal (2007) from Hur (2007) and even Oreg's (1995b) paper citing Ray's (2000) work
-Ma et al. (2002) et al. and (Hur 2007, Peters et al.’s 2007, Griffins' 2000) from
-the paper (O'Hern 2010) and from McDonald (2003) and Wa'el et al. (1993) or
-even from van der Aalst (2004) or others (De Boor 1980).
+special \u2019 quotes: from Charlton’s (2002) global measure
+trailing apostrophe: in Griffiths’ (2000) and others
+Single author: from Hur (2007) and
+Two authors: Ma and Agarwal (2007)
+More than two authors: Peters et al.’s (2007) major work
+Posssive first author: even Oreg's (1995b) paper citing Ray's (2000) work
+Short name: Ma et al. (2002).
+Fragment1: Ma et al. (2002) et al.
+Multiple cites: in (Hur 2007, Peters et al.’s 2007, Griffins' 2000) from
+Apostrophes in names: (O'Hern 2010) and Wa'el et al. (1993) or
+Capitals within names: from McDonald (2003) we gather that
+Multiword last names: even from van der Aalst (2004) or others (De Boor 1980).
