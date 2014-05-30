@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name        =  'citesight'
-  s.version     =  '0.0.2'
+  s.version     =  '0.0.4'
   s.executables << 'citesight'
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'minitest-rg'
-  s.date        =  '2014-05-27'
+  s.date        =  '2014-05-30'
   s.summary     =  'Citation extractor and analyzer'
   s.description =  'Extract and analyze citations from APA style text'
   s.authors     =  ['Soumya Ray']
