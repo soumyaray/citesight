@@ -5,7 +5,7 @@
   },
   "trailing_apostrophe": {
     "case": "in Griffiths’ (2000) and others",
-    "result": [["Griffith 2000", 1]]
+    "result": [["Griffiths 2000", 1]]
   },
   "single_author": {
     "case": "from Hur (2007) and",
@@ -36,8 +36,8 @@
     "result": [["Ma et al. 2002", 1]]
   },
   "multiple_cites": {
-    "case": "in (Hur 2007, Peters et al.’s 2007, Griffins' 2000) from",
-    "result": [["Hur 2007", 1], ["Peter et al. 2007", 1], ["Griffin 2000", 1]]
+    "case": "in (Hur 2007, Peters et al.’s 2007, Griffiths' 2000) from",
+    "result": [["Hur 2007", 1], ["Peters et al. 2007", 1], ["Griffiths 2000", 1]]
   },
   "apostrophes_in_name": {
     "case": "We've seen (O'Hern 2010) and Wa'el et al. (1993) say",
