@@ -22,12 +22,19 @@ class PaperCitations
     Hash[clean_cites.group_by { |c| c }.map { |cit, num| [cit, num.count] }]
   end
 
+  ## Returns array of citation locations (index) in manuscript
+  ## Usage:
+  # require './lib/citesight.rb'
+  # contents = File.open('./spec/testfiles/test.txt', 'r').read
+  # PaperCitations.index_cite(contents, 'Peters et al. 2007')
+  # => [219, 500]
   def index_cite(cite)
     cite_parts = cite.split
-    author_s = cite_parts.take(cite_parts.size-1)
+    author_s = cite_parts.take(cite_parts.size-1).join(' ')
     year_s = cite_parts.last
-    @contents.enum_for(:scan, /#{author_s}#{possessive}?#{year(year_s)}/x
+    @contents.enum_for(:scan, /(#{author_s}#{possessive}?#{year(year_s)})/
                       ).map { Regexp.last_match.begin(0) }
+    # @contents.scan(/(#{author_s}#{possessive}?#{year(year_s)})/)
   end
 
   private
