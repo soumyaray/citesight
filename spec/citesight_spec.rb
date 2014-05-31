@@ -20,7 +20,8 @@ end
 describe 'Cases', 'Test different citation cases' do
   TEST_CASES.keys.each do |k|
     it "#{k}" do
-      PaperCitations.unique_cites(TEST_CASES[k]["case"]).to_a.must_equal(TEST_CASES[k]["result"])
+      PaperCitations.unique_cites(TEST_CASES[k]["case"]).to_a\
+        .must_equal(TEST_CASES[k]["result"])
     end
   end
 

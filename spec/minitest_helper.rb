@@ -1,7 +1,7 @@
 require 'json'
 require './lib/citesight.rb'
 
-TEST_CONTENTS = File.open('./spec/testfiles/test.txt', 'r').read
+TEST_CONTENTS = File.read('./spec/testfiles/test.txt')
 
 TEST_TXT_RESULTS =
   {
