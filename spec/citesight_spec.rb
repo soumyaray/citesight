@@ -10,7 +10,7 @@ describe 'Paper', 'A text document' do
     end
 
     it 'should fine the right citations' do
-      @results.must_equal TEST_TXT_RESULTS
+      @results.must_equal TEST_CITES
     end
   end
 
@@ -29,5 +29,20 @@ describe 'Cases', 'Test different citation cases' do
         .must_equal(TEST_CASES[k]["result"])
     end
   end
-
 end
+
+describe 'Indexes', 'Accurately find index of different citations' do
+  it "can find the right index for all citations" do
+    TEST_CITES.map do |cite, _count|
+      TEST_INDEXES[cite].must_equal \
+                         PaperCitations.index_of_cite(TEST_CONTENTS, cite)
+    end
+  end
+end
+
+## Produce hash of all cite indexes:
+# Hash[
+#   TEST_CITES.map do |cite, count|
+#     [cite, PaperCitations.index_cite(doc, cite)]
+#   end
+# ]
