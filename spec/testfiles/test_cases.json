@@ -1,33 +1,33 @@
 {
-  "special_u2019_quotes": {
+  "special u2019 quotes": {
     "case": "from Charlton’s (2002) global measure",
     "result": [["Charlton 2002", 1]]
   },
-  "trailing_apostrophe": {
+  "trailing apostrophe": {
     "case": "in Griffiths’ (2000) and others",
     "result": [["Griffiths 2000", 1]]
   },
-  "single_author": {
+  "single author": {
     "case": "from Hur (2007) and",
     "result": [["Hur 2007", 1]]
   },
-  "two_authors": {
+  "two authors": {
     "case": "Ma and Agarwal (2007)",
     "result": [["Ma and Agarwal 2007", 1]]
   },
-  "more_than_two_authors": {
+  "more than two authors": {
     "case": "Peters et al.’s (2007) major work",
     "result": [["Peters et al. 2007", 1]]
   },
-  "possesive_first_author": {
+  "possesive first author": {
     "case": "even Hur's (2007) paper citing Ray's (2000) work",
     "result": [["Hur 2007", 1], ["Ray 2000", 1]]
   },
-  "character_in_year": {
+  "character in year": {
     "case": "Oreg's (1995b) paper and Venkatesh (2003a)",
     "result": [["Oreg 1995b", 1], ["Venkatesh 2003a", 1]]
   },
-  "short_last_name": {
+  "short last name": {
     "case": "from Ma et al. (2002) we find that",
     "result": [["Ma et al. 2002", 1]]
   },
@@ -35,19 +35,19 @@
     "case": "Ma et al. (2002) et al. (2000)",
     "result": [["Ma et al. 2002", 1]]
   },
-  "multiple_cites": {
+  "multiple cites": {
     "case": "in (Hur 2007, Peters et al.’s 2007, Griffiths' 2000) from",
     "result": [["Hur 2007", 1], ["Peters et al. 2007", 1], ["Griffiths 2000", 1]]
   },
-  "apostrophes_in_name": {
+  "apostrophes in name": {
     "case": "We've seen (O'Hern 2010) and Wa'el et al. (1993) say",
     "result": [["O'Hern 2010", 1], ["Wa'el et al. 1993", 1]]
   },
-  "capital_letters_within_names": {
+  "capital letters within names": {
     "case": "from McDonald (2003) we gather that",
     "result": [["McDonald 2003", 1]]
   },
-  "multiword_last_names": {
+  "multiword last names": {
     "case":   "even from van der Aalst (2004) or others (De Boor 1980) claim",
     "result": [["van der Aalst 2004", 1], ["De Boor 1980", 1]]
   }
