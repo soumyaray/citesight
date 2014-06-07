@@ -15,11 +15,11 @@ This gem may be used as a command line utility or called from code
     require 'citesight'
     require 'pp'
 
-    contents = File.read('spec/testfiles/text.txt')
+    contents = File.read("spec/testfiles/large_test.txt", :encoding => "UTF-8")
     cites = PaperCitations.unique_cites(contents)
 
     puts "\nTotal unique citations: #{cites.count}"
-    PP.pp(Hash[res])
+    PP.pp(Hash[cites])
 
     top_cite = cites.sort_by { |_c, count| count}.reverse.first[0]
     puts "\nYour top citation: #{top_cite}"
