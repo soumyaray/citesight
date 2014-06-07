@@ -15,8 +15,14 @@ This gem may be used as a command line utility or called from code
     require 'citesight'
     require 'pp'
 
-    contents = File.open(ARGV[0], 'r').read
-    res = PaperCitations.unique_cites(contents)
+    contents = File.read('spec/testfiles/text.txt')
+    cites = PaperCitations.unique_cites(contents)
 
-    puts "\nTotal unique citations: #{res.count}"
+    puts "\nTotal unique citations: #{cites.count}"
     PP.pp(Hash[res])
+
+    top_cite = cites.sort_by { |_c, count| count}.reverse.first[0]
+    puts "\nYour top citation: #{top_cite}"
+
+    top_cite_indexes = PaperCitations.index_of_cite(contents, top_cite)
+    puts "It was cited at locations: #{top_cite_indexes.join(', ')}"
