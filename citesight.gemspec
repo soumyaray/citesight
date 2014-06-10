@@ -1,9 +1,12 @@
+$:.push File.expand_path("../lib", __FILE__)
+require 'citesight/version'
+
 Gem::Specification.new do |s|
   s.name        =  'citesight'
   s.version     =  CiteSight::VERSION
   s.executables << 'citesight'
-  s.add_development_dependency 'minitest'
-  s.add_development_dependency 'minitest-rg'
+  s.add_development_dependency 'minitest', '~> 0'
+  s.add_development_dependency 'minitest-rg', '~> 0'
   s.date        =  '2014-06-10'
   s.summary     =  'Citation extractor and analyzer'
   s.description =  'Extract and analyze citations from APA style text'
