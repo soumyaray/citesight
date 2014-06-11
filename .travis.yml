@@ -9,4 +9,4 @@ rvm:
 branches:
   only:
     - master
-    - /^release-.*$/
+    - /^rel-.*$/
