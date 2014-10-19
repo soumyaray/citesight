@@ -1,6 +1,4 @@
-require 'rake/testtask'
-
-task :default => [:spec]
+task :default => :spec
 
 desc 'Run specs'
 task :spec do
