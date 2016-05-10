@@ -9,7 +9,9 @@ fail ArgumentError, "Usage:  get_citations [filename]\n" if ARGV.count == 0
 
 contents = File.open(ARGV[0], 'r').read
 
-results = PaperCitations.unique_cites(contents).sort_by { |c, _| c.downcase }
+results = CiteSight::PaperCitations.unique_cites(contents).sort_by do |c, _|
+  c.downcase
+end
 
 puts "Top citations:\n"
 PP.pp(Hash[results.sort_by { |_cite, count| count }.reverse.take(5)])
