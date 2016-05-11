@@ -5,6 +5,7 @@ require 'citesight'
 require 'pp'
 
 # executable requirements: (1) env shebang above; (2) file mode 0755
+# TODO: Return with error message instead of failing
 
 fail ArgumentError, "Usage:  get_citations [filename]\n" if ARGV.count == 0
 

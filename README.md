@@ -8,9 +8,12 @@ Gem to extract and report on citations in an academic text
 ## Usage
 This gem may be used as a command line utility or called from code
 
+<!-- TODO: installation instructions -->
+
 ### CLI:
     citesight mydoc.txt
 
+<!-- TODO: update usage instructions -->
 ### Code example:
     require 'citesight'
     require 'pp'
