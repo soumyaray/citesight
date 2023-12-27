@@ -1,4 +1,4 @@
-# This class extracts and counts APA-style citations in a paper.
+# This class extracts and counts MISQ or APA style citations in a paper.
 # The unique_cites method returns a hash of citations and counts
 # in the order in which they were encountered.
 module CiteSight
@@ -45,7 +45,7 @@ module CiteSight
     def other_authors() "([ ]and[ ]#{author} | ([ ]et[ ]al.){1})" end
     def possessive() "([#{apostrophe}]s|[#{apostrophe}])" end
     def year_literal() "[1-2][0-9]{3}[a-z]?" end
-    def year(yr) "([ ][\(]?#{yr}[,\)\;])" end
+    def year(yr) "([,]?[ ][\(]?#{yr}[,\)\;])" end
 
     def cite_match
       /( #{author}{1}#{other_authors}?#{possessive}?#{year(year_literal)} )/x
