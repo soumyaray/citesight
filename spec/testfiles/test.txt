@@ -13,3 +13,4 @@ Capitals within names: from McDonald (2003) we gather that
 Multiword last names: even from van der Aalst (2004) or others (De Boor 1980).
 APA commas: according to literature (Ray, 2000) the
 APA multiple cites: (Ray, 2000; Hur, 2007)
+APA two authors: Ma & Agarwal (2007) agree with this (Ma & Agarwal 2007)

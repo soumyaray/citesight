@@ -42,7 +42,7 @@ module CiteSight
     def apostrophe() "\'\u2019" end
     def prefix() '(([dD]e|[vV]an[ ]?[dD]er)[ ]?)' end
     def author() "(#{prefix}?[A-Z][[:alpha:]#{apostrophe}\-]+)" end
-    def other_authors() "([ ]and[ ]#{author} | ([ ]et[ ]al.){1})" end
+    def other_authors() "([ ](and|\&)[ ]#{author} | ([ ]et[ ]al.){1})" end
     def possessive() "([#{apostrophe}]s|[#{apostrophe}])" end
     def year_literal() "[1-2][0-9]{3}[a-z]?" end
     def year(yr) "([,]?[ ][\(]?#{yr}[,\)\;])" end
@@ -52,7 +52,10 @@ module CiteSight
     end
 
     def remove_punctuation(cite)
-      cite.gsub(/[\(\),;]|([#{apostrophe}]s)/, '').gsub(/[#{apostrophe}]\s/, ' ')
+      cite
+        .gsub(/[\(\),;]|([#{apostrophe}]s)/, '')
+        .gsub(/[#{apostrophe}]\s/, ' ')
+        .gsub(/\&/, 'and')
     end
   end
 end

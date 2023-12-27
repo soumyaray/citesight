@@ -32,17 +32,10 @@ describe 'Cases', 'Test different citation cases' do
 end
 
 describe 'Indexes', 'Accurately find index of different citations' do
-  it "can find the right index for all citations" do
-    TEST_CITES.map do |cite, _count|
-      _(TEST_INDEXES[cite]).must_equal \
-                CiteSight::PaperCitations.index_of_cite(TEST_CONTENTS, cite)
+  TEST_CITES.map do |cite, _count|
+    it "can find the right index for #{cite}" do
+        _(TEST_INDEXES[cite]).must_equal \
+          CiteSight::PaperCitations.index_of_cite(TEST_CONTENTS, cite)
     end
   end
 end
-
-## Produce hash of all cite indexes:
-# Hash[
-#   TEST_CITES.map do |cite, count|
-#     [cite, PaperCitations.index_cite(doc, cite)]
-#   end
-# ]
