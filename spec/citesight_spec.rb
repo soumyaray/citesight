@@ -17,7 +17,8 @@ describe 'Paper', 'A text document' do
   describe 'when there are no citations to be found' do
     it 'should return an empty hash' do
       no_cites_txt = 'these are not the citations you are looking for'
-      # TODO: check return of empty hash
+      _(CiteSight::PaperCitations.unique_cites(no_cites_txt).any?)
+        .must_equal(false)
     end
   end
 end
