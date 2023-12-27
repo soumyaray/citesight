@@ -1,4 +1,4 @@
 module CiteSight
-  VERSION = '0.1.2'
-  DATE    = '2016-05-10'
+  VERSION = '0.2.0'
+  DATE    = '2023-12-27'
 end
