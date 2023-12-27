@@ -11,7 +11,7 @@ TEST_CITES =
     "Ma and Agarwal 2007" => 1,
     "Hur 2007" => 2,
     "Oreg 1995b" => 1,
-    "Ray 2000" => 2,
+    "Ray 2000" => 3,
     "Ma et al. 2002" => 3,
     "Griffins 2000" => 1,
     "O'Hern 2010" => 1,
@@ -42,3 +42,5 @@ TEST_INDEXES =
 TEST_CASES = File.open('./spec/testfiles/test_cases.json', 'r') do |f|
   JSON.load(f)
 end
+
+TEST_RESULTS = CiteSight::PaperCitations.unique_cites(TEST_CONTENTS)

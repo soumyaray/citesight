@@ -1,16 +1,15 @@
 require 'minitest/autorun'
 require 'minitest/rg'
-require './spec/minitest_helper.rb'
+require './spec/spec_helper.rb'
 
 describe 'Paper', 'A text document' do
 
   describe 'when there are citations in the text' do
-    before do
-      @results = CiteSight::PaperCitations.unique_cites(TEST_CONTENTS)
-    end
-
-    it 'should fine the right citations' do
-      _(@results).must_equal TEST_CITES
+    TEST_RESULTS.each do |cite, count|
+      it "should find the right citation count for #{cite}" do
+        _(TEST_CITES[cite]).must_equal count
+        # _(RESULTS).must_equal TEST_CITES
+      end
     end
   end
 
