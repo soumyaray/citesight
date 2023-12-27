@@ -43,4 +43,4 @@ TEST_CASES = File.open('./spec/testfiles/test_cases.json', 'r') do |f|
   JSON.load(f)
 end
 
-TEST_RESULTS = CiteSight::PaperCitations.unique_cites(TEST_CONTENTS)
+TEST_RESULTS = CiteSight::PaperCitations.new(TEST_CONTENTS).unique_cites

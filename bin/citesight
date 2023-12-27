@@ -11,7 +11,7 @@ fail ArgumentError, "Usage:  get_citations [filename]\n" if ARGV.count == 0
 
 contents = File.open(ARGV[0], 'r').read
 
-results = CiteSight::PaperCitations.unique_cites(contents).sort_by do |c, _|
+results = CiteSight::PaperCitations.new(contents).unique_cites.sort_by do |c, _|
   c.downcase
 end
 

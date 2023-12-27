@@ -3,14 +3,6 @@
 # in the order in which they were encountered.
 module CiteSight
   class PaperCitations
-    def self.unique_cites(contents)
-      new(contents).unique_cites
-    end
-
-    def self.index_of_cite(contents, cite)
-      new(contents).index_of_cite(cite)
-    end
-
     def initialize(contents)
       @contents = contents
     end
