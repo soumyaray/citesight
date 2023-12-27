@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.date        =  CiteSight::DATE
 
   s.executables << 'citesight'
-  s.add_development_dependency 'minitest'
-  s.add_development_dependency 'minitest-rg'
+  s.add_development_dependency 'minitest', '~> 5.20'
+  s.add_development_dependency 'minitest-rg', '~> 5.3'
 
   s.summary     =  'Citation extractor and analyzer'
   s.description =  'Extract and analyze citations from MISQ and APA style text'
