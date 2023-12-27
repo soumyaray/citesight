@@ -10,7 +10,7 @@ describe 'Paper', 'A text document' do
     end
 
     it 'should fine the right citations' do
-      @results.must_equal TEST_CITES
+      _(@results).must_equal TEST_CITES
     end
   end
 
@@ -25,7 +25,7 @@ end
 describe 'Cases', 'Test different citation cases' do
   TEST_CASES.keys.each do |k|
     it "can detect #{k}" do
-      CiteSight::PaperCitations.unique_cites(TEST_CASES[k]["case"]).to_a\
+      _(CiteSight::PaperCitations.unique_cites(TEST_CASES[k]["case"]).to_a)
         .must_equal(TEST_CASES[k]["result"])
     end
   end
@@ -34,7 +34,7 @@ end
 describe 'Indexes', 'Accurately find index of different citations' do
   it "can find the right index for all citations" do
     TEST_CITES.map do |cite, _count|
-      TEST_INDEXES[cite].must_equal \
+      _(TEST_INDEXES[cite]).must_equal \
                 CiteSight::PaperCitations.index_of_cite(TEST_CONTENTS, cite)
     end
   end
